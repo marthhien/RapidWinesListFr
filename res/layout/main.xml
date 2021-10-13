@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#000000">
+	
+<TableLayout
+	android:id="@+id/widget37"
+	android:layout_width="309dp"
+	android:layout_height="51dp"
+	android:orientation="vertical"
+	android:layout_x="6dp"
+	android:layout_y="10dp">
+	
+      <TableRow
+	android:id="@+id/widgetnom"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#4b4b4a"
+	android:orientation="horizontal">
+	
+    <ImageButton
+	android:id="@+id/btnphoto"
+	android:layout_width="75dp"
+	android:layout_height="75dp"
+	android:layout_x="8dp"
+	android:layout_y="12dp"
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"          
+        android:onClick="nouveau"
+        android:background="@android:color/transparent"
+        android:src="@drawable/camera" />
+<ImageButton
+	android:id="@+id/btnfiche"
+	android:layout_width="75dp"
+	android:layout_height="75dp"
+	android:layout_x="61dp"
+	android:layout_y="13dp"
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"          
+        android:onClick="fiche"
+        android:background="@android:color/transparent"
+        android:src="@drawable/pencil" />
+<ImageButton
+	android:id="@+id/btnfavl"
+	android:layout_width="75dp"
+	android:layout_height="75dp"
+	android:layout_x="114dp"
+	android:layout_y="13dp" 
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"                 
+	android:onClick="favorisliste"
+        android:background="@android:color/transparent"
+        android:src="@drawable/star_yellow" />
+<ImageButton
+	android:id="@+id/btnupl"
+	android:layout_width="75dp"
+	android:layout_height="75dp"
+	android:layout_x="114dp"
+	android:layout_y="13dp" 
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"                 
+	android:onClick="upliste"
+        android:background="@android:color/transparent"
+        android:src="@drawable/up" />
+<ImageButton
+	android:id="@+id/btndownl"
+	android:layout_width="75dp"
+	android:layout_height="75dp"
+	android:layout_x="114dp"
+	android:layout_y="13dp" 
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"                 
+	android:onClick="downliste"
+        android:background="@android:color/transparent"
+        android:src="@drawable/down" />
+
+</TableRow>
+
+</TableLayout>
+
+  <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+    	   
+ <ListView
+    android:id="@android:id/list"
+    android:longClickable="true"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="#000000"
+	android:textColor="#FF0000"
+	android:choiceMode="singleChoice" />
+
+
+</TableLayout>
+

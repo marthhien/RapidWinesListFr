@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#000000">
+  
+<TableLayout
+	android:id="@+id/widget37"
+	android:layout_width="309dp"
+	android:layout_height="51dp"
+	android:orientation="vertical"
+	android:layout_x="6dp"
+	android:layout_y="10dp">
+	
+    <TableRow
+	android:id="@+id/widgetnom"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="#4b4b4a"
+	android:orientation="vertical">
+	
+    <ImageButton
+	android:id="@+id/btnsave"
+	android:layout_width="75dp"
+	android:layout_height="75dp"
+	android:layout_x="8dp"
+	android:layout_y="12dp"
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"          
+        android:onClick="enregistrer"
+        android:background="@android:color/transparent"
+        android:src="@drawable/micro_sd" />
+
+    <ImageButton
+	android:id="@+id/btndelete"
+	android:layout_width="75dp"
+	android:layout_height="75dp"
+	android:layout_x="61dp"
+	android:layout_y="13dp"
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"          
+        android:onClick="supprimer"
+        android:background="@android:color/transparent"
+        android:src="@drawable/delete" />
+    
+      <ToggleButton 
+    android:id="@+id/toggle"
+ android:textOn="" 
+ android:textOff="" 
+ android:text=""
+    android:layout_width="75dp"
+    android:layout_height="75dp"
+	android:layout_x="114dp"
+	android:layout_y="14dp"
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"          
+        android:background="@android:color/transparent"
+        android:onClick="favorisfiche"
+    android:button="@drawable/check" />
+      
+         <ImageButton
+	android:id="@+id/btnphoto"
+	android:layout_width="75dp"
+	android:layout_height="75dp"
+	android:layout_x="167dp"
+	android:layout_y="15dp"
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"          
+        android:onClick="nouvelphoto"
+        android:background="@android:color/transparent"
+        android:src="@drawable/camera" />
+         
+            <ImageButton
+	android:id="@+id/btnimg"
+	android:layout_width="75dp"
+	android:layout_height="75dp"
+	android:layout_x="167dp"
+	android:layout_y="15dp"
+	  android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"          
+        android:onClick="nouvelimg"
+        android:background="@android:color/transparent"
+        android:src="@drawable/image" />
+
+</TableRow>
+
+</TableLayout>
+
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<TableLayout
+	android:id="@+id/widget39"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+    	   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+    	   
+
+    <TableRow
+	android:id="@+id/widgettfav"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	
+	<TextView
+        android:id="@+id/TextView01"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textColor="#fcfc00"
+	   android:text="@string/SP" />
+ 
+	</TableRow>
+    
+    	   <View
+        android:layout_height="5dip"
+        android:background="#000000" />
+    
+<TableRow
+	android:id="@+id/widgetnom"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+    android:textColor="#FFFFFF"
+ 	android:id="@+id/textnom"
+        android:text="@string/NOM"/>
+	
+	<ImageButton      
+	android:id="@+id/selnom"        
+	android:layout_width="15dp"        
+	android:layout_height="15dp"
+        android:scaleType="centerInside"          
+        android:background="@android:color/transparent"
+        android:src="@drawable/vide" />
+	
+	</TableRow>
+	
+   	<EditText
+        android:background="@drawable/rect_text_edit"
+        android:layout_height="30dp"
+        android:paddingLeft="3dp"        
+	android:singleLine="true"
+	android:id="@+id/editnom" />
+
+
+    <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+
+<TableRow
+	android:id="@+id/widgetmais"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	
+	android:textColor="#FFFFFF"
+ 	android:id="@+id/textmaison"
+        android:text="@string/MAISON" />
+    
+		<ImageButton      
+	android:id="@+id/selmaison"        
+	android:layout_width="15dp"        
+	android:layout_height="15dp"
+        android:scaleType="centerInside"          
+        android:background="@android:color/transparent"
+        android:src="@drawable/vide" />
+		
+		</TableRow>
+		
+
+     	<EditText
+        android:layout_width="fill_parent" 
+       android:layout_height="30dp"
+        android:paddingLeft="3dp"        
+	android:singleLine="true"
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/editmaison" />
+
+   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+   
+<TableRow
+	android:id="@+id/widgetpays"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="0dip" 
+	android:layout_height="wrap_content" 
+	android:textColor="#FFFFFF"
+	android:layout_weight="1" 
+ 	android:id="@+id/textpays"
+        android:text="@string/PAYS" />
+
+			  		    <ImageButton      
+	android:id="@+id/selpays"        
+	android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="centerInside" 
+        android:layout_weight="0"          
+        android:onClick="selectPays"
+        android:background="@android:color/transparent"
+        android:src="@drawable/pencil" />
+			  		    
+		</TableRow>
+		
+     	<EditText
+        android:layout_width="fill_parent" 
+       android:layout_height="30dp"
+        android:paddingLeft="3dp"        
+	android:singleLine="true"
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/editpays" />
+
+   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+
+<TableRow
+	android:id="@+id/widgetregion"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	      android:layout_weight="1"          
+	android:textColor="#FFFFFF"
+ 	android:id="@+id/textregion"
+        android:text="@string/REGION" />
+    
+		<ImageButton      
+	android:id="@+id/selregion"        
+	android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="centerInside"   
+              android:layout_weight="0"          
+        android:onClick="selectRegion"       
+        android:background="@android:color/transparent"
+        android:src="@drawable/pencil" />
+		
+		</TableRow>
+	
+     	<EditText
+        android:layout_width="fill_parent" 
+       android:layout_height="30dp"
+        android:paddingLeft="3dp"        
+	android:singleLine="true"
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/editregion" />
+
+   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+
+<TableRow
+	android:id="@+id/widgetcouleur"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_weight="1"               
+	android:textColor="#FFFFFF"
+ 	android:id="@+id/textcouleur"
+        android:text="@string/COULEUR" />
+	
+		<ImageButton      
+	android:id="@+id/selcouleur"        
+	android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="centerInside"  
+        android:layout_weight="0"          
+        android:onClick="selectCouleur"               
+        android:background="@android:color/transparent"
+        android:src="@drawable/pencil" />
+    
+		</TableRow>
+		    
+	     	<EditText
+        android:layout_width="fill_parent" 
+        android:paddingLeft="3dp"        
+       android:layout_height="30dp"
+	android:singleLine="true"
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/editcouleur" />
+     
+
+   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+
+<TableRow
+	android:id="@+id/widgetmille"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textColor="#FFFFFF"
+ 	android:id="@+id/textmille"
+        android:text="@string/MILLE" />
+	
+		<ImageButton      
+	android:id="@+id/selmille"        
+	android:layout_width="15dp"        
+	android:layout_height="15dp"
+        android:scaleType="centerInside"          
+        android:background="@android:color/transparent"
+        android:src="@drawable/vide" />
+    
+		</TableRow>
+	
+     	<EditText
+        android:layout_width="fill_parent" 
+       android:layout_height="30dp"
+        android:paddingLeft="3dp"        
+	android:singleLine="true"
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/editmille" />
+
+   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+
+<TableRow
+	android:id="@+id/widgetprix"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textColor="#FFFFFF"
+ 	android:id="@+id/textprix"
+        android:text="@string/PRIX" />
+	
+		<ImageButton      
+	android:id="@+id/selprix"        
+	android:layout_width="15dp"        
+	android:layout_height="15dp"
+        android:scaleType="centerInside"          
+        android:background="@android:color/transparent"
+        android:src="@drawable/vide" />
+    
+		</TableRow>
+		
+     	<EditText
+        android:layout_width="fill_parent" 
+       android:layout_height="30dp"
+        android:paddingLeft="3dp"        
+	android:singleLine="true"
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/editprix" />
+
+   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+
+<TableRow
+	android:id="@+id/widgetalc"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="0dip" 
+	android:layout_height="wrap_content" 
+	android:textColor="#FFFFFF" 
+	android:layout_weight="1" 
+ 	android:id="@+id/textal"
+        android:text="@string/ALCOOL" />
+    
+	    <ImageButton      
+	android:id="@+id/selal"        
+	android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="centerInside"  
+        android:layout_weight="0"         
+        android:onClick="selectAlcool"
+        android:background="@android:color/transparent"
+        android:src="@drawable/pencil" />
+		</TableRow>
+		    
+	     	<EditText
+        android:layout_width="fill_parent" 
+       android:layout_height="30dp"
+        android:paddingLeft="3dp"        
+	android:singleLine="true"
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/edital" />
+
+   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+
+
+<TableRow
+	android:id="@+id/widgetcode"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textColor="#FFFFFF"
+ 	android:id="@+id/textcode"
+        android:text="@string/CODE" />
+	
+		<ImageButton      
+	android:id="@+id/selcode"        
+	android:layout_width="15dp"        
+	android:layout_height="15dp"
+        android:scaleType="centerInside"          
+        android:background="@android:color/transparent"
+        android:src="@drawable/vide" />
+    
+		</TableRow>
+		
+       	<EditText
+        android:layout_width="fill_parent" 
+       android:layout_height="30dp"
+        android:paddingLeft="3dp"        
+	android:singleLine="true"
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/editcode" />
+
+   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+
+<TableRow
+	android:id="@+id/widgetnote"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+  android:layout_width="0dip" 
+	android:layout_height="wrap_content" 
+	android:textColor="#FFFFFF" 
+	android:layout_weight="1" 
+ 	android:id="@+id/textnote"
+        android:text="@string/NOTE" />
+	
+	       <ToggleButton 
+    android:id="@+id/star1"
+ android:textOn="" 
+ android:textOff="" 
+ android:text=""
+android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="fitCenter"   
+        android:layout_centerVertical="true"
+          android:onClick="selectEvalStars"
+        android:layout_weight="0.1"         
+             android:background="@android:color/transparent"
+    android:button="@drawable/check" />
+	        
+	
+	       <ToggleButton 
+    android:id="@+id/star2"
+ android:textOn="" 
+ android:textOff="" 
+ android:text=""
+android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="fitCenter"  
+        android:layout_centerVertical="true"
+        android:layout_weight="0.1"         
+          android:onClick="selectEvalStars"
+             android:background="@android:color/transparent"
+    android:button="@drawable/check" />
+
+	        <ToggleButton 
+    android:id="@+id/star3"
+ android:textOn="" 
+ android:textOff="" 
+ android:text=""
+        android:layout_weight="0.1"         
+  android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="fitCenter"  
+         android:layout_centerVertical="true"
+         android:onClick="selectEvalStars"
+             android:background="@android:color/transparent"
+    android:button="@drawable/check" />
+
+
+	       <ToggleButton 
+    android:id="@+id/star4"
+ android:textOn="" 
+ android:textOff="" 
+ android:text=""
+ android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="fitCenter"  
+          android:layout_centerVertical="true"
+          android:layout_weight="0.1"         
+        android:onClick="selectEvalStars"
+             android:background="@android:color/transparent"
+    android:button="@drawable/check" />
+
+	       <ToggleButton 
+    android:id="@+id/star5"
+ android:textOn="" 
+ android:textOff="" 
+ android:text=""
+ android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="fitCenter"  
+         android:layout_centerVertical="true"
+          android:layout_weight="1"         
+        android:onClick="selectEvalStars"
+             android:background="@android:color/transparent"
+    android:button="@drawable/check" />
+
+        
+	        	    <ImageButton      
+	android:id="@+id/selnote"        
+	android:layout_width="35dp"        
+	android:layout_height="35dp"
+        android:scaleType="centerInside"  
+        android:layout_weight="0"         
+        android:onClick="selectEval"
+        android:background="@android:color/transparent"
+        android:src="@drawable/pencil" />
+		</TableRow>
+   
+    
+	     	<EditText
+        android:layout_width="fill_parent" 
+       android:layout_height="30dp"
+        android:paddingLeft="3dp"        
+	android:singleLine="true"
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/editnote" />
+     	
+        	   <View
+        android:layout_height="10dip"
+        android:background="#000000" />
+
+     	<TableRow
+	android:id="@+id/widgetapp"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textColor="#FFFFFF"
+ 	android:id="@+id/textapprec"
+        android:text="@string/APPREC" />
+	
+		<ImageButton      
+	android:id="@+id/selapp"        
+	android:layout_width="15dp"        
+	android:layout_height="15dp"
+        android:scaleType="centerInside"          
+        android:background="@android:color/transparent"
+        android:src="@drawable/vide" />
+    
+		</TableRow>
+     	    
+
+     		     	<EditText
+        android:layout_width="fill_parent" 
+       android:layout_height="90dp"
+        android:maxLength="420" 
+        android:gravity="top"
+        android:paddingLeft="3dp"        
+        android:background="@drawable/rect_text_edit"
+	android:id="@+id/editapprec" />
+
+	    <View
+        android:layout_height="35dip"
+        android:background="#000000" />
+
+	  
+</TableLayout>
+
+    
+</ScrollView>
+
+</TableLayout>
+
+
+
+
+
+
+
